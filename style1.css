@@ -1,0 +1,80 @@
+body {
+    background-image: url(do.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.form-box {
+    width: 350px;
+    padding: 30px;
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+input {
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border: 2px solid #87CEEB;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #0056b3;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #003d80;
+}
+
+.error {
+    color: yellow;
+    font-size: 13px;
+    text-align: left;
+}

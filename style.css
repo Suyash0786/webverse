@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f7f7f7;
+    background-image: url(books.jpg);
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #49494d;
+    color: white;
+}
+
+.navigation-container {
+    display: flex;
+    gap: 30px;
+}
+
+.menu-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.menu-link:hover {
+    color: rgb(96, 165, 197);
+}
+.book-section {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.book-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+.book-card img {
+    width: 80px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.book-card h2 {
+    margin: 0;
+    font-size: 20px;
+}
+.review-section {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.review-section h2 {
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 12px;
+    background: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #003d80;
+}

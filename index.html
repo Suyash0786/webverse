@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Review Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+    <h1>📚 Book Verse</h1>
+
+    <div class="navigation-container">
+
+        <a href="index.html" class="menu-link">Home</a>
+        <a href="genere.html" class="menu-link">Genres</a>
+        <a href="about.html" class="menu-link">About</a>
+        <a href="contact.html" class="menu-link">Contact</a>
+<a href="signup.html" class="menu-link" target="_blank">
+            Login</a>
+        <!-- Login link with clickable text -->
+        <a href="java script.html" class="menu-link" target="_blank" onclick="changeText()" id="loginBtn">
+            Sign up
+        </a>
+
+        
+    </div>
+</header>
+
+<script>
+function changeText() {
+    document.getElementById("loginBtn").innerHTML = "Signed";
+}
+</script>
+    <section class="book-section">
+        <div class="book-card">
+            <img src="apj.jpg" alt="Wings of Fire">
+            <div>
+                <h2>Wings of Fire</h2>
+                <p>An inspiring autobiography of Dr. APJ Abdul Kalam.</p>
+            </div>
+        </div>
+
+        <div class="book-card">
+            <img src="h.webp" alt="The Locked Room">
+            <div>
+                <h2>The Locked Room</h2>
+                <p>A gripping thriller full of mystery and suspense.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="review-section">
+        <h2>Write Your Review</h2>
+
+        <form>
+            <label>Your Name:</label>
+            <input type="text" placeholder="Enter your name">
+
+            <label>Book Title:</label>
+            <input type="text" placeholder="Enter book title">
+
+            <label>Rating:</label>
+            <select>
+                <option>5 - Excellent</option>
+                <option>4 - Very Good</option>
+                <option>3 - Good</option>
+                <option>2 - Average</option>
+                <option>1 - Poor</option>
+            </select>
+
+            <label>Your Review:</label>
+            <textarea placeholder="Write your review here..."></textarea>
+
+            <button type="submit">Submit Review</button>
+        </form>
+    </section>
+
+</body>
+</html>
